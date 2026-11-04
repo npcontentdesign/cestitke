@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novogodišnje čestitke za firme | NP Content &amp; Design</title>
+<meta name="description" content="Kratke animirane novogodišnje čestitke sa vašim logom i idejom iz vašeg posla. 25 EUR, gotovo za 2 dana. NP Content & Design, Novi Sad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F7; --surface:#FFFFFF; --ink:#1B2836; --muted:#566576; --line:#D9E0E6;
+  --red:#C3323B; --red-ink:#FFFFFF; --pine:#1E5A48;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111922; --surface:#18222D; --ink:#E8EDF1; --muted:#9AA8B6; --line:#2A3743;
+    --red:#E0525A; --red-ink:#140B0C; --pine:#6CC3A5; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111922; --surface:#18222D; --ink:#E8EDF1; --muted:#9AA8B6; --line:#2A3743;
+  --red:#E0525A; --red-ink:#140B0C; --pine:#6CC3A5; color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+header.top{display:flex;justify-content:space-between;align-items:baseline;padding:22px 0 0}
+.brand{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;font-weight:800;font-size:18px;letter-spacing:-.01em;text-decoration:none}
+.city{color:var(--muted);font-size:15px}
+
+.hero{padding:44px 0 36px;max-width:760px}
+h1{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;font-weight:800;
+  font-size:clamp(34px,7.4vw,64px);line-height:1.02;letter-spacing:-.025em;margin:0 0 20px;text-wrap:balance}
+.lead{font-size:clamp(17px,2.4vw,20px);color:var(--muted);margin:0 0 28px;max-width:60ch}
+.lead b{color:var(--ink);font-weight:700}
+
+/* gift tag: the one bold element */
+.tag{display:inline-flex;align-items:stretch;background:var(--red);color:var(--red-ink);
+  border-radius:6px 14px 14px 6px;position:relative;font-weight:500;line-height:1.25;
+  box-shadow:0 1px 0 rgba(0,0,0,.08)}
+.tag::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--bg);
+  position:absolute;left:14px;top:50%;transform:translateY(-50%)}
+.tag span{padding:12px 18px;display:flex;align-items:center;white-space:nowrap}
+.tag span:first-child{padding-left:40px;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:22px}
+.tag span+span{border-left:1px dashed rgba(255,255,255,.45)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag span+span{border-left-color:rgba(0,0,0,.35)}}
+:root[data-theme="dark"] .tag span+span{border-left-color:rgba(0,0,0,.35)}
+
+h2{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;font-weight:800;
+  font-size:clamp(26px,4.6vw,38px);line-height:1.1;letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 24px;max-width:60ch}
+
+.gallery{padding:28px 0 8px;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px;list-style:none;margin:0;padding:0}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 22px}}
+.card button{all:unset;cursor:pointer;display:block;width:100%;border-radius:14px}
+.card video,.card img{width:100%;aspect-ratio:1/1;border-radius:14px;background:var(--surface);object-fit:cover}
+.card h3{margin:12px 0 2px;font-size:16px;font-weight:700;line-height:1.3}
+.card h3 small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.card p{margin:6px 0 0;font-size:15px;line-height:1.45}
+.note{color:var(--muted);font-size:14px;margin:26px 0 0}
+
+.yours{margin:44px 0 0;padding:26px 24px;background:var(--surface);border-radius:18px;border:1px solid var(--line)}
+.yours h2{font-size:clamp(22px,3.6vw,28px)}
+.yours p{margin:0;max-width:62ch}
+
+.how{padding:52px 0 8px}
+.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:18px;counter-reset:s}
+@media (min-width:760px){.steps{grid-template-columns:repeat(3,1fr);gap:28px}}
+.steps li{counter-increment:s;padding-top:14px;border-top:2px solid var(--ink)}
+.steps li::before{content:counter(s);font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:28px;line-height:1;display:block;margin-bottom:8px;color:var(--pine)}
+.steps b{display:block;margin-bottom:2px}
+.steps span{color:var(--muted)}
+
+.contact{padding:56px 0 64px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px}
+.btn.primary{background:var(--red);color:var(--red-ink)}
+.btn.ghost{border:1.5px solid var(--ink)}
+.small{color:var(--muted);font-size:15px;margin-top:18px}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--muted);font-size:14px}
+
+/* viewer */
+dialog{border:0;padding:0;background:transparent;max-width:min(92vw,620px);width:100%}
+dialog::backdrop{background:rgba(10,15,20,.82)}
+dialog video{width:100%;border-radius:16px}
+dialog .bar{display:flex;justify-content:space-between;align-items:center;color:#fff;margin-top:12px;gap:12px}
+dialog .bar span{font-weight:500}
+dialog button{font:inherit;font-weight:700;color:#111;background:#fff;border:0;border-radius:10px;min-height:44px;padding:0 18px;cursor:pointer}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="https://instagram.com/npcontentdesign">NP Content &amp; Design</a>
+    <span class="city">Novi Sad</span>
+  </header>
+
+  <section class="hero">
+    <h1>Novogodišnja čestitka koju će vaši klijenti pogledati do kraja</h1>
+    <p class="lead">Kratka animacija sa vašim logom i <b>malom idejom iz vašeg posla</b>. Umesto još jedne jelke, knjigovođa dobija bilans godine, a stomatolog zub koji namigne.</p>
+    <div class="tag" role="note" aria-label="25 EUR, gotova za 2 dana">
+      <span>25 EUR</span><span>gotova za 2 dana</span>
+    </div>
+  </section>
+
+  <section class="gallery" aria-labelledby="g">
+    <h2 id="g">Šest delatnosti, šest ideja</h2>
+    <p class="sub">Tapnite na čestitku da je vidite veću.</p>
+    <ul class="grid">
+      <li class="card"><button type="button" data-name="Kvadrat, knjigovodstvena agencija" aria-label="Pogledajte veću čestitku: Kvadrat">
+        <video src="video/kvadrat.mp4" poster="video/kvadrat.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video></button>
+        <h3>Kvadrat<small>knjigovodstvena agencija</small></h3><p>Bilans godine se zatvara, a brojač staje na 2027.</p></li>
+      <li class="card"><button type="button" data-name="Beli osmeh, stomatološka ordinacija" aria-label="Pogledajte veću čestitku: Beli osmeh">
+        <video src="video/beli-osmeh.mp4" poster="video/beli-osmeh.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video></button>
+        <h3>Beli osmeh<small>stomatološka ordinacija</small></h3><p>Zub sa kapom namigne i poželi vam mnogo razloga za osmeh.</p></li>
+      <li class="card"><button type="button" data-name="Šapica, veterinarska ambulanta" aria-label="Pogledajte veću čestitku: Šapica">
+        <video src="video/sapica.mp4" poster="video/sapica.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video></button>
+        <h3>Šapica<small>veterinarska ambulanta</small></h3><p>Kuca gurne jelku, a kuglica se otkotrlja i postane 2027.</p></li>
+      <li class="card"><button type="button" data-name="Forma, fitnes studio" aria-label="Pogledajte veću čestitku: Forma">
+        <video src="video/forma.mp4" poster="video/forma.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video></button>
+        <h3>Forma<small>fitnes studio</small></h3><p>Pingvin podigne šipku, a kuglice postanu tegovi 20 i 27.</p></li>
+      <li class="card"><button type="button" data-name="Lingvo, škola stranih jezika" aria-label="Pogledajte veću čestitku: Lingvo">
+        <video src="video/lingvo.mp4" poster="video/lingvo.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video></button>
+        <h3>Lingvo<small>škola stranih jezika</small></h3><p>Sova diriguje, a reči na šest jezika slože 2027.</p></li>
+      <li class="card"><button type="button" data-name="Pikselbit, IT firma" aria-label="Pogledajte veću čestitku: Pikselbit">
+        <video src="video/pikselbit.mp4" poster="video/pikselbit.jpg" muted loop playsinline preload="metadata" aria-hidden="true"></video></button>
+        <h3>Pikselbit<small>IT firma</small></h3><p>Terminal sačuva 2026. i pokrene nova_godina.exe.</p></li>
+    </ul>
+    <p class="note">Firme na primerima su izmišljene. Vaša čestitka dobija vaš logo, vaše boje i vašu poruku.</p>
+
+    <div class="yours">
+      <h2>Ne vidite svoju delatnost?</h2>
+      <p>Ideju smišljam za svaki posao: optiku, advokatsku kancelariju, vrtić, auto servis, agenciju za osiguranje. Napišite mi čime se bavite i dobićete predlog ideje, bez obaveze.</p>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="h">
+    <h2 id="h">Kako izgleda saradnja</h2>
+    <ol class="steps">
+      <li><b>Pošaljete logo</b><span>i par reči o firmi i poruci koju želite.</span></li>
+      <li><b>Predložim ideju</b><span>iz vašeg posla, a kad je odobrite, za dva dana je čestitka gotova.</span></li>
+      <li><b>Dobijate dva fajla</b><span>GIF za mejl i video za Instagram, Viber i WhatsApp.</span></li>
+    </ol>
+  </section>
+
+  <section class="contact" aria-labelledby="c">
+    <h2 id="c">Naručite svoju čestitku</h2>
+    <p class="sub">Čestitka je gotova dva dana nakon što odobrite ideju, pa je klijentima šaljete na vreme, pred praznike. Za porudžbinu ili pitanje pišite mi ili me pozovite.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:npcontentdsgn@gmail.com?subject=Novogodi%C5%A1nja%20%C4%8Destitka">Pišite mi mejl</a>
+      <a class="btn ghost" href="tel:+381641568580">Pozovite 064 156 8580</a>
+    </div>
+    <p class="small">Ostale radove (e-knjige, radne sveske, web aplikacije, 3D) pogledajte na Instagramu <a href="https://instagram.com/npcontentdesign">@npcontentdesign</a>.</p>
+  </section>
+</div>
+<footer><div class="wrap">© 2026 NP Content &amp; Design, Novi Sad</div></footer>
+
+<dialog id="viewer" aria-label="Čestitka">
+  <video id="big" muted loop playsinline></video>
+  <div class="bar"><span id="cap"></span><button type="button" id="close">Zatvori</button></div>
+</dialog>
+
+<script>
+(function(){
+  var vids=[].slice.call(document.querySelectorAll('.card video'));
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){var p=e.target.play();if(p&&p.catch)p.catch(function(){});}else{e.target.pause();}
+    });},{threshold:.35});
+    vids.forEach(function(v){io.observe(v)});
+  }
+  var dlg=document.getElementById('viewer'),big=document.getElementById('big'),cap=document.getElementById('cap');
+  function close(){big.pause();if(dlg.open)dlg.close();}
+  document.querySelectorAll('.card button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var v=b.querySelector('video');
+      if(!dlg.showModal){var p=v.play();if(p&&p.catch)p.catch(function(){});return;}
+      big.src=v.currentSrc||v.src; big.poster=v.poster; cap.textContent=b.getAttribute('data-name');
+      dlg.showModal(); big.currentTime=0; var p=big.play(); if(p&&p.catch)p.catch(function(){});
+    });
+  });
+  document.getElementById('close').addEventListener('click',close);
+  dlg.addEventListener('click',function(e){if(e.target===dlg)close();});
+  dlg.addEventListener('close',function(){big.pause();});
+})();
+</script>
+</body>
+</html>
