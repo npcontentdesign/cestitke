@@ -58,6 +58,13 @@ h1{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;font-weight:
 .tag span+span{border-left:1px dashed rgba(255,255,255,.45)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag span+span{border-left-color:rgba(0,0,0,.35)}}
 :root[data-theme="dark"] .tag span+span{border-left-color:rgba(0,0,0,.35)}
+.tag{max-width:100%}
+@media (max-width:520px){
+  .tag span{padding:10px 12px;font-size:15px}
+  .tag span:first-child{padding-left:32px;font-size:19px}
+  .tag::before{left:12px;width:10px;height:10px}
+}
+.tag span+span{white-space:normal}
 
 h2{font-family:"Bricolage Grotesque","Figtree",system-ui,sans-serif;font-weight:800;
   font-size:clamp(26px,4.6vw,38px);line-height:1.1;letter-spacing:-.02em;margin:0 0 8px}
